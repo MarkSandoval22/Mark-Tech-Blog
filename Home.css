@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 20px;
+    background: #046381;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 30px
+  }
+  
+  .header nav {
+    margin-top: 20px;
+  }
+  
+  .header nav a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  
+  .fakeimg1 {
+    background-color: #aaa;
+    background-image: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTI2NzI5YzNlZjFhY2Y0ZTQyZWQxMDJkNzE1MzBmYWQxNjQzZjEwOSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/juO0MsgqkFbNKMI6DP/giphy.gif");
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 500px;
+    padding: 0;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 30px;
+  }
+  
+  .fakeimg1::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+  }
+  
+  .fakeimg2 {
+    background-color: #aaa;
+    background-image: url("https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2020/4/28/bjoyslzjb3uxqyg82uz2/minecraft");
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 500px;
+    padding: 0;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 30px;
+  }
+  
+  .fakeimg2::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+  }
+
+  .fakeimg3 {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fakeimg3 img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10%;
+  }
+
+  .fakeimg4 {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+  }
+  
+  .fakeimg4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }  
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 30px
+  }
+  
+  /* Add a card effect for articles */
+  .cardRight {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 30px
+  }
+
+  .cardRight p {
+    text-align: center;
+  }
+  
+  .cardRight h2{
+      text-align: center
+  }
+  
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: white;
+    margin-top: 20px;
+    border-radius: 30px
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn,
+    .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
